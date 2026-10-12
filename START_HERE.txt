@@ -1,0 +1,35 @@
+CIVIC PULSE AI INDIA - FINAL UPGRADED VERSION
+
+1. Extract the ZIP completely.
+2. Open the Civic_Pulse_AI_India_Final folder.
+3. Click File Explorer address bar, type: cmd
+4. Run:
+   py -m venv .venv
+5. Run:
+   .venv\Scripts\activate
+6. Run:
+   pip install -r requirements.txt
+7. Run:
+   streamlit run app.py
+8. Open in browser:
+   http://localhost:8501
+
+ADMIN DEMO LOGIN
+Email: admin@civicpulse.gov.in
+Password: Admin@123
+
+CITIZEN
+Create your own account. Login uses email + password + OTP.
+Without SMTP configuration, the OTP is displayed on the screen for local demo.
+
+PHOTO
+Upload JPG/PNG.
+If the photo contains GPS EXIF metadata, location is extracted automatically.
+If GEMINI_API_KEY is added in .env, the image is analyzed for Water/Road/Waste/Street Light/Drainage.
+
+DUPLICATE FEATURE
+Same category + same/near place + similar description is merged into ONE incident.
+The government sees the incident once, with an increased reporter count.
+
+DATA
+Included India incidents are DEMO DATA for Bengaluru/Karnataka. Do not claim they are official government complaints.
